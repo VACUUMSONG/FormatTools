@@ -145,39 +145,7 @@ def format_set():
     if os.path.exists("./123.txt"):
         os.remove("./123.txt")
 
-
-#===================================================================          
-from datetime import datetime
-from easygui import msgbox
-#构造一个将来的时间
-#截止日期:
-future = datetime.strptime('2021-06-01 08:00:00','%Y-%m-%d %H:%M:%S')
-#当前时间
-now = datetime.now()
-#求时间差
-delta = future - now
-
-print("倒计时:" + str(delta.days))
-#===================================================================          
-if(delta.days>0):
-    # 创建窗口
-    window = tkinter.Tk()
-else:
-    info='''
-                     _______________
-                    / 哥走了，      \\
-                    \\ 有缘江湖再见。/
-                     ---------------
-                      \\
-                       \  ^^___^^
-                        \  (o o)\_______
-                           (___)\        )\/\\
-                               ||        |
-                               ||------W |
-                               ||       ||
-   '''   
-    msgbox(info,"温馨提示")
-
+window = tkinter.Tk()
 window.title("排版助手_V3.0")
 window.geometry("880x560")
 # GUI 界面编辑 
